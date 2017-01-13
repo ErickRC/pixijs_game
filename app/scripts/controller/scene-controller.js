@@ -13,13 +13,11 @@ PixiGame.SceneController.prototype.update = function() {
 }
 
 PixiGame.SceneController.prototype.requestSceneChange = function(Scene) {
-
     if (this._currentScene !== null) {
         this._previousScene = this._currentScene;
         this._previousScene.destroy();
         PixiGame.stage.removeChild(this._previousScene);
     }
-
     this._currentScene = new Scene();
     PixiGame.stage.addChild(this._currentScene);
 }

@@ -1,6 +1,6 @@
 PixiGame.GameLoopController = function() {
     this._isGameActive = false;
-    this._fps = 60;
+    this._fps = 20;
     this._updateInterval = null;
 }
 
@@ -10,7 +10,7 @@ PixiGame.GameLoopController.prototype.update = function() {
     if (!this._isGameActive) {
         return;
     }
-
+    //console.log('Game loop update');
     PixiGame.renderer.render(PixiGame.stage);
     PixiGame.sceneController.update();
 }

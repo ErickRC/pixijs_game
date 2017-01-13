@@ -2,6 +2,6 @@
   "name": "pixijs_game",
   "private": true,
   "dependencies": {
-    "pixi": "~3.0.0"
+    "pixi.js": "~4.3.1"
   }
 }
